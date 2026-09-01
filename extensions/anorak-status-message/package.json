@@ -1,0 +1,55 @@
+{
+  "name": "anorak-status-message",
+  "displayName": "Anorak Status Message",
+  "description": "Adds a custom, configurable text message to the left side of the VS Code status bar.",
+  "version": "1.0.0",
+  "publisher": "calebsharp",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "status bar",
+    "anorak"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Anorak Status Message",
+      "properties": {
+        "anorakStatusMessage.text": {
+          "type": "string",
+          "default": "✨ Anorak",
+          "description": "The text shown on the left side of the status bar."
+        },
+        "anorakStatusMessage.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show or hide the status bar message."
+        }
+      }
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Caleb Sharp"
+  },
+  "homepage": "https://github.com/calebdsharp/anorak",
+  "bugs": {
+    "url": "https://github.com/calebdsharp/anorak/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebdsharp/anorak",
+    "directory": "vscode/extensions/anorak-status-message"
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish:openvsx": "ovsx publish"
+  }
+}

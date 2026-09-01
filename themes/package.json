@@ -1,0 +1,240 @@
+{
+  "name": "anorak-themes",
+  "displayName": "Anorak Themes",
+  "description": "A collection of 18 VS Code theme packs, each with light and dark variants (36 themes total), paired with a matching editor font.",
+  "version": "1.0.0",
+  "publisher": "calebsharp",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "wes anderson",
+    "national parks",
+    "swiss design",
+    "pastel",
+    "light",
+    "dark",
+    "font",
+    "anorak"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Anorak: Aurora Glass Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aurora-glass-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Aurora Glass Light",
+        "uiTheme": "vs",
+        "path": "./themes/aurora-glass-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Autumn Terminal Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/autumn-terminal-dark.json"
+      },
+      {
+        "label": "Anorak: Autumn Terminal Light",
+        "uiTheme": "vs",
+        "path": "./themes/autumn-terminal-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Chalk & Clay Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/chalk-clay-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Chalk & Clay Light",
+        "uiTheme": "vs",
+        "path": "./themes/chalk-clay-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Dust Bloom Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dust-bloom-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Dust Bloom Light",
+        "uiTheme": "vs",
+        "path": "./themes/dust-bloom-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Foggy Pine Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/foggy-pine-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Foggy Pine Light",
+        "uiTheme": "vs",
+        "path": "./themes/foggy-pine-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Golden Hour Studio Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/golden-hour-studio-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Golden Hour Studio Light",
+        "uiTheme": "vs",
+        "path": "./themes/golden-hour-studio-light.json"
+      },
+      {
+        "label": "Anorak: Graph Paper Studio Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/graph-paper-studio-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Graph Paper Studio Light",
+        "uiTheme": "vs",
+        "path": "./themes/graph-paper-studio-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Ink Spill Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ink-spill-dark.json"
+      },
+      {
+        "label": "Anorak: Ink Spill Light",
+        "uiTheme": "vs",
+        "path": "./themes/ink-spill-light.json"
+      },
+      {
+        "label": "Anorak: Liquid Glass Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/liquid-glass-dark.json"
+      },
+      {
+        "label": "Anorak: Liquid Glass Light",
+        "uiTheme": "vs",
+        "path": "./themes/liquid-glass-light.json"
+      },
+      {
+        "label": "Anorak: Marker Pack Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/marker-pack-dark.json"
+      },
+      {
+        "label": "Anorak: Marker Pack Light",
+        "uiTheme": "vs",
+        "path": "./themes/marker-pack-light.json"
+      },
+      {
+        "label": "Anorak: National Parks Field Guide Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/national-parks-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: National Parks Field Guide Light",
+        "uiTheme": "vs",
+        "path": "./themes/national-parks-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Night Ferry Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/night-ferry-dark.json"
+      },
+      {
+        "label": "Anorak: Night Ferry Light",
+        "uiTheme": "vs",
+        "path": "./themes/night-ferry-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Pastel Field Notes Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/pastel-field-notes-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Pastel Field Notes Light",
+        "uiTheme": "vs",
+        "path": "./themes/pastel-field-notes-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Sea Glass Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sea-glass-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Sea Glass Light",
+        "uiTheme": "vs",
+        "path": "./themes/sea-glass-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Slate Orchard Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/slate-orchard-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Slate Orchard Light",
+        "uiTheme": "vs",
+        "path": "./themes/slate-orchard-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Studio Monochrome Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/studio-monochrome-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Studio Monochrome Light",
+        "uiTheme": "vs",
+        "path": "./themes/studio-monochrome-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Swiss International Style Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/swiss-style-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Swiss International Style Light",
+        "uiTheme": "vs",
+        "path": "./themes/swiss-style-light-color-theme.json"
+      },
+      {
+        "label": "Anorak: Watercolor Wash Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/watercolor-wash-dark-color-theme.json"
+      },
+      {
+        "label": "Anorak: Watercolor Wash Light",
+        "uiTheme": "vs",
+        "path": "./themes/watercolor-wash-light-color-theme.json"
+      }
+    ],
+    "configuration": {
+      "title": "Anorak Themes",
+      "properties": {
+        "anorakThemes.autoSwitchFont": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically change editor.fontFamily to match the active Anorak theme."
+        }
+      }
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Caleb Sharp"
+  },
+  "homepage": "https://github.com/calebdsharp/anorak",
+  "bugs": {
+    "url": "https://github.com/calebdsharp/anorak/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebdsharp/anorak",
+    "directory": "vscode/themes"
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish:openvsx": "ovsx publish"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "anorak-dad-joke",
+  "displayName": "Anorak Dad Joke",
+  "description": "Shows a random dad joke in the VS Code status bar. Fetches a fresh joke on launch and lets you click for another.",
+  "version": "1.0.0",
+  "publisher": "calebsharp",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "status bar",
+    "dad joke",
+    "fun",
+    "anorak"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "anorakDadJoke.newJoke",
+        "title": "Anorak Dad Joke: Get a New Joke"
+      }
+    ],
+    "configuration": {
+      "title": "Anorak Dad Joke",
+      "properties": {
+        "anorakDadJoke.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show or hide the dad joke status bar item."
+        },
+        "anorakDadJoke.maxLength": {
+          "type": "number",
+          "default": 80,
+          "description": "Truncate jokes longer than this many characters in the status bar. The full joke is always shown on hover."
+        }
+      }
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Caleb Sharp"
+  },
+  "homepage": "https://github.com/calebdsharp/anorak",
+  "bugs": {
+    "url": "https://github.com/calebdsharp/anorak/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebdsharp/anorak",
+    "directory": "vscode/extensions/anorak-dad-joke"
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish:openvsx": "ovsx publish"
+  }
+}

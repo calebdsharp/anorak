@@ -1,0 +1,29 @@
+{
+  "name": "anorak",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Anorak — a collection of thoughtfully designed VS Code extensions and themes.",
+  "author": {
+    "name": "Caleb Sharp"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebdsharp/anorak"
+  },
+  "scripts": {
+    "package": "pnpm --recursive package",
+    "package:themes": "pnpm --filter anorak-themes package",
+    "package:dad-joke": "pnpm --filter anorak-dad-joke package",
+    "package:status-message": "pnpm --filter anorak-status-message package",
+    "publish:openvsx": "pnpm --recursive publish:openvsx"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.0",
+    "ovsx": "^0.10.7"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.15.0"
+}
