@@ -3,7 +3,8 @@
   "displayName": "Anorak Dad Joke",
   "description": "A tiny dose of dad humor in your VS Code status bar. Shows a random joke on startup and fetches a new one whenever you click it.",
   "version": "1.0.0",
-  "publisher": "calebsharp",
+  "publisher": "calebdsharp",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },

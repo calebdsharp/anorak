@@ -3,7 +3,8 @@
   "displayName": "Anorak Themes",
   "description": "A collection of 18 thoughtfully designed VS Code theme packs, each with light and dark variants (36 themes total), with matching editor fonts.",
   "version": "1.0.0",
-  "publisher": "calebsharp",
+  "publisher": "calebdsharp",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },

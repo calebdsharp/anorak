@@ -3,7 +3,8 @@
   "displayName": "Anorak Status Message",
   "description": "Add a custom, configurable message to the left side of the VS Code status bar.",
   "version": "1.0.0",
-  "publisher": "calebsharp",
+  "publisher": "calebdsharp",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },
