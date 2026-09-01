@@ -1,7 +1,7 @@
 {
   "name": "anorak-themes",
   "displayName": "Anorak Themes",
-  "description": "A collection of 18 VS Code theme packs, each with light and dark variants (36 themes total), paired with a matching editor font.",
+  "description": "A collection of 18 thoughtfully designed VS Code theme packs, each with light and dark variants (36 themes total), with matching editor fonts.",
   "version": "1.0.0",
   "publisher": "calebsharp",
   "engines": {
@@ -13,13 +13,9 @@
   "keywords": [
     "theme",
     "color-theme",
-    "wes anderson",
-    "national parks",
-    "swiss design",
-    "pastel",
+    "minimal",
     "light",
     "dark",
-    "font",
     "anorak"
   ],
   "main": "./extension.js",
@@ -41,7 +37,7 @@
       {
         "label": "Anorak: Autumn Terminal Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/autumn-terminal-dark.json"
+        "path": "./themes/autumn-terminal-dark-color-theme.json"
       },
       {
         "label": "Anorak: Autumn Terminal Light",
@@ -86,7 +82,7 @@
       {
         "label": "Anorak: Golden Hour Studio Light",
         "uiTheme": "vs",
-        "path": "./themes/golden-hour-studio-light.json"
+        "path": "./themes/golden-hour-studio-light-color-theme.json"
       },
       {
         "label": "Anorak: Graph Paper Studio Dark",
@@ -101,32 +97,32 @@
       {
         "label": "Anorak: Ink Spill Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/ink-spill-dark.json"
+        "path": "./themes/ink-spill-dark-color-theme.json"
       },
       {
         "label": "Anorak: Ink Spill Light",
         "uiTheme": "vs",
-        "path": "./themes/ink-spill-light.json"
+        "path": "./themes/ink-spill-light-color-theme.json"
       },
       {
         "label": "Anorak: Liquid Glass Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/liquid-glass-dark.json"
+        "path": "./themes/liquid-glass-dark-color-theme.json"
       },
       {
         "label": "Anorak: Liquid Glass Light",
         "uiTheme": "vs",
-        "path": "./themes/liquid-glass-light.json"
+        "path": "./themes/liquid-glass-light-color-theme.json"
       },
       {
         "label": "Anorak: Marker Pack Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/marker-pack-dark.json"
+        "path": "./themes/marker-pack-dark-color-theme.json"
       },
       {
         "label": "Anorak: Marker Pack Light",
         "uiTheme": "vs",
-        "path": "./themes/marker-pack-light.json"
+        "path": "./themes/marker-pack-light-color-theme.json"
       },
       {
         "label": "Anorak: National Parks Field Guide Dark",
@@ -141,7 +137,7 @@
       {
         "label": "Anorak: Night Ferry Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/night-ferry-dark.json"
+        "path": "./themes/night-ferry-dark-color-theme.json"
       },
       {
         "label": "Anorak: Night Ferry Light",
@@ -220,7 +216,7 @@
       }
     }
   },
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "author": {
     "name": "Caleb Sharp"
   },
@@ -231,7 +227,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/calebdsharp/anorak",
-    "directory": "vscode/themes"
+    "directory": "themes"
   },
   "scripts": {
     "package": "vsce package --no-dependencies",

@@ -70,11 +70,11 @@ For development, package the extension from this directory with `pnpm package` a
 
 ## Adding a new theme
 
-1. Add a new `<name>-color-theme.json` file under `themes/`.
+1. Add matching `<name>-dark-color-theme.json` and `<name>-light-color-theme.json` files under `themes/`.
 2. Add one entry to `package.json`'s `contributes.themes` array (`label`, `uiTheme`, `path`) — keep the `Anorak: ` prefix on the label.
 3. Add a font pairing for it in `FONT_MAP` in `extension.js` — every registered theme should have one, or its font-switch silently does nothing.
-4. Bump `version` in `package.json`.
-5. Run `pnpm package` from this directory.
+4. Run `pnpm validate` from the monorepo root.
+5. Bump `version` in `package.json` when making a release, then run `pnpm package` from this directory.
 6. Install the generated `.vsix` to test it locally.
 
 **Always build both light and dark for a new pack together** — a pack with only one variant registered breaks the "search Anorak, get a clean list" experience and is easy to forget about later.
@@ -86,6 +86,10 @@ Edit hex values directly in that theme's JSON file (`colors` for UI, `tokenColor
 ## Fast iteration while tweaking
 
 Instead of repackaging a `.vsix` every time, symlink the whole extension folder into `~/.vscode/extensions/`, edit the JSON or `extension.js`, then run `Developer: Reload Window` from the command palette. Only package a `.vsix` once you're happy and want a portable, shareable artifact.
+
+## Validation
+
+From the monorepo root, `pnpm validate` checks the registered theme paths, light/dark theme count, filename convention, font mappings, package metadata, and required package files.
 
 ## Repo hygiene
 

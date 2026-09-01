@@ -22,6 +22,7 @@ This repository is a pnpm monorepo. Each package is independently versioned and 
 
 ```bash
 pnpm install
+pnpm validate
 pnpm package
 ```
 
@@ -37,11 +38,23 @@ The generated `.vsix` files are intentionally ignored by Git.
 
 ## Publishing
 
-Packages are published independently under the `calebsharp` publisher name. Open VSX publishing requires an `OVSX_PAT` environment variable containing an Open VSX access token.
+Packages are published independently under the `calebsharp` publisher name. Open VSX publishing requires an `OVSX_PAT` environment variable containing an Open VSX personal access token.
+
+Publish individual packages:
+
+```bash
+pnpm publish:openvsx:themes
+pnpm publish:openvsx:dad-joke
+pnpm publish:openvsx:status-message
+```
+
+To publish all three after validation:
 
 ```bash
 pnpm publish:openvsx
 ```
+
+See [PUBLISHING.md](./PUBLISHING.md) for the first-time Open VSX setup, local publishing, and GitHub Actions publishing workflow.
 
 ## License
 

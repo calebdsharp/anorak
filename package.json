@@ -12,15 +12,19 @@
     "url": "https://github.com/calebdsharp/anorak"
   },
   "scripts": {
-    "package": "pnpm --recursive package",
+    "validate": "node scripts/validate.js",
+    "package": "pnpm validate && pnpm --recursive package",
     "package:themes": "pnpm --filter anorak-themes package",
     "package:dad-joke": "pnpm --filter anorak-dad-joke package",
     "package:status-message": "pnpm --filter anorak-status-message package",
-    "publish:openvsx": "pnpm --recursive publish:openvsx"
+    "publish:openvsx": "pnpm validate && pnpm --recursive publish:openvsx",
+    "publish:openvsx:themes": "pnpm --filter anorak-themes publish:openvsx",
+    "publish:openvsx:dad-joke": "pnpm --filter anorak-dad-joke publish:openvsx",
+    "publish:openvsx:status-message": "pnpm --filter anorak-status-message publish:openvsx"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.6.0",
-    "ovsx": "^0.10.7"
+    "ovsx": "^1.1.1"
   },
   "engines": {
     "node": ">=20"
