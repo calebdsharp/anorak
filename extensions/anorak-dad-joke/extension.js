@@ -10,8 +10,6 @@ function fetchDadJoke() {
       path: "/",
       method: "GET",
       headers: {
-        // icanhazdadjoke.com requires an Accept header to return JSON instead of HTML,
-        // and asks API consumers to identify themselves via User-Agent.
         Accept: "application/json",
         "User-Agent": "Anorak Dad Joke VS Code Extension",
       },
@@ -65,8 +63,6 @@ async function loadNewJoke() {
     statusBarItem.text = `😄 ${truncate(joke, maxLength)}`;
     statusBarItem.tooltip = `${joke}\n\nClick for another.`;
   } catch (err) {
-    // Offline, API down, timeout, etc. — fail quietly in the status bar rather than
-    // throwing, and let the tooltip carry the actual error for anyone curious.
     statusBarItem.text = "😅 Couldn't fetch a joke";
     statusBarItem.tooltip = `Dad joke fetch failed: ${err.message}\n\nClick to retry.`;
   }
@@ -94,7 +90,6 @@ function activate(context) {
     }),
   );
 
-  // Fetch one immediately on startup.
   loadNewJoke();
 }
 

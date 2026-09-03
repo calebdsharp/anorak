@@ -24,6 +24,12 @@
     "onStartupFinished"
   ],
   "contributes": {
+    "commands": [
+      {
+        "command": "anorakStatusMessage.change",
+        "title": "Anorak: Change Status Message"
+      }
+    ],
     "configuration": {
       "title": "Anorak Status Message",
       "properties": {

@@ -1,8 +1,5 @@
 const vscode = require("vscode");
 
-// Font pairing per theme label. Fonts are free (Google Fonts) but not bundled here —
-// install them yourself for the real thing to render; otherwise this falls back
-// through the generic monospace chain silently.
 const FONT_MAP = {
   "Anorak: National Parks Field Guide Light": "Space Mono",
   "Anorak: National Parks Field Guide Dark": "Space Mono",
@@ -66,7 +63,7 @@ function applyFontForActiveTheme() {
 
   const themeName = config.get("workbench.colorTheme");
   const fontFamily = FONT_MAP[themeName];
-  if (!fontFamily) return; // not one of ours — leave the user's font alone
+  if (!fontFamily) return;
 
   const current = config.get("editor.fontFamily");
   if (current === fontFamily) return;
@@ -79,7 +76,6 @@ function applyFontForActiveTheme() {
 }
 
 function activate(context) {
-  // Apply once on startup in case a Anorak theme is already active.
   applyFontForActiveTheme();
 
   context.subscriptions.push(

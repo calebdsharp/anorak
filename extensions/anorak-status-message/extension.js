@@ -2,30 +2,53 @@ const vscode = require("vscode");
 
 let statusBarItem;
 
-function render() {
+const render = () => {
   const config = vscode.workspace.getConfiguration("anorakStatusMessage");
   const enabled = config.get("enabled", true);
-  const text = config.get("text", "✨ Anorak");
+  const text = config.get("text", "[Anorak]");
 
   if (!enabled) {
     statusBarItem.hide();
     return;
   }
 
-  statusBarItem.text = text;
   statusBarItem.color = "#ceff1a";
+  statusBarItem.text = text;
   statusBarItem.show();
-}
+};
 
-function activate(context) {
-  // Left side: use StatusBarAlignment.Left. Priority is arbitrary — higher numbers
-  // sit further left among other left-aligned items.
+const activate = (context) => {
   statusBarItem = vscode.window.createStatusBarItem(
     vscode.StatusBarAlignment.Left,
     50,
   );
-  // No command assigned — intentionally not clickable.
+
+  statusBarItem.command = "anorakStatusMessage.change";
+  statusBarItem.tooltip = "Click to change Anorak status message";
+
   context.subscriptions.push(statusBarItem);
+
+  const changeMessage = vscode.commands.registerCommand(
+    "anorakStatusMessage.change",
+    async () => {
+      const config = vscode.workspace.getConfiguration("anorakStatusMessage");
+      const current = config.get("text", "[Anorak]");
+
+      const text = await vscode.window.showInputBox({
+        prompt: "Enter the message to display in the status bar",
+        title: "Change Status Message",
+        value: current,
+      });
+
+      if (text === undefined) {
+        return;
+      }
+
+      await config.update("text", text, vscode.ConfigurationTarget.Global);
+    },
+  );
+
+  context.subscriptions.push(changeMessage);
 
   render();
 
@@ -36,8 +59,8 @@ function activate(context) {
       }
     }),
   );
-}
+};
 
-function deactivate() {}
+const deactivate = () => {};
 
 module.exports = { activate, deactivate };
