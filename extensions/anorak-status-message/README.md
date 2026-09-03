@@ -2,12 +2,18 @@
 
 A small VS Code extension that adds a custom text message to the left side of the status bar.
 
+## Changing the message
+
+Click the Anorak status bar message to change it directly.
+
+You can also run **Anorak: Change Status Message** from the Command Palette.
+
 ## Configuring
 
-`Cmd/Ctrl+,` → search "anorak status" → or edit directly in `settings.json`:
+For additional configuration, open Settings with `Cmd/Ctrl+,` and search for "anorak status", or edit `settings.json` directly:
 
 ```json
-"anorakStatusMessage.text": "✨ Anorak",
+"anorakStatusMessage.text": "[Anorak]",
 "anorakStatusMessage.enabled": true
 ```
 
