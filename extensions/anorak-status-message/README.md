@@ -1,6 +1,6 @@
 # Anorak Status Message
 
-A small VS Code extension that adds a custom text message to the left side of the status bar. Static display only — not clickable, doesn't run any command.
+A small VS Code extension that adds a custom text message to the left side of the status bar.
 
 ## Configuring
 
